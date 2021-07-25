@@ -10,7 +10,10 @@ header{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    cursor: default;
 }
+
 h1{
     font-family: 'Alice',sans-serif;
     margin-top: 25px;
@@ -32,9 +35,10 @@ h1{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2), -5px 5px 5px rgba(0, 0, 0, .2);
 }
 #navbar a{
+    height: 21px;
     float: left;
     display: block;
     text-align: center;
@@ -44,13 +48,21 @@ h1{
 }
 
 #navbar a:hover{
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .2), inset -2px -2px 2px rgba(0, 0, 0, .2);
     background-color: #A64D2D;
     color: white;
 }
 img{
+    display: inline-block;
     border: 10px dashed #683E42;
     width: 300px;
     height: 400px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2), -5px 5px 5px rgba(0, 0, 0, .2);
+    transition-duration: .1s;
+    transition-timing-function: ease-in;
+}
+img:hover{
+    transform: scale(1.2);
 }
 
 .image-gallery{
@@ -68,33 +80,67 @@ img{
     border: 10px solid #94936F;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -9px;
+    margin-bottom: -10px;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, .2), -5px -5px 5px rgba(0, 0, 0, .2);
 }
-div.accomplishments{
+.accomplishments{
+    position: absolute;
     float: left;
-    padding: 15px;
-    padding-top: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2), -2px -2px 2px rgba(0, 0, 0, .2);
+    margin-top: 28px;
+    margin-left: 15px;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
 }
+
+div.accomplishments:hover{
+    transform: scale(1.02);
+    color: #94936F;
+    background-color: #683E42;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor:default;
+    margin-top: 0;
+    text-shadow: 10px 10px 7px rgba(0, 0, 0, .2);
+}
+
 div.goals{
-    float:right;
-    padding: 15px;
-    padding-top: 5px;
+    right: 175px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2), -2px -2px 2px rgba(0, 0, 0, .2);
+    margin-top: 28px;
+    position: absolute;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
 }
+div.goals:hover{
+    transform: scale(1.02);
+    color: #94936F;
+    background-color: #683E42;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor:default;
+    margin-top: 0;
+    text-shadow: 10px 10px 7px rgba(0, 0, 0, .2);
+}
+
+
+
 h3{
     font-family: 'Quando',sans-serif;
     text-align: center;
     border: 5px solid #683E42;
-    padding: 2px;
     margin-bottom: 0;
-    margin-top: 25px;
+    margin-top: 0;
 }
 ul{
     font-family: 'Raleway',sans-serif;
     width: 450px;
     border: 5px solid #683E42;
     border-top: 0;
-    margin-top: 0;   
+    margin-top: 0;
+    margin-bottom: 0;  
 }
+
 footer{
     font-style: italic;
     text-align: center;
@@ -104,6 +150,7 @@ footer{
     margin-right: auto;
     margin-top: -10px;
     margin-bottom: -10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .2), inset -2px -2px 2px rgba(0, 0, 0, .2);
 }
 
 footer a{
@@ -113,6 +160,7 @@ footer a{
 footer:hover{
     background-color: #A64D2D;
     color: #94936F;
+    cursor: default;
 }
 footer a:hover{
     color: #683E42;
@@ -123,6 +171,7 @@ footer a:hover{
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2), -5px 5px 5px rgba(0, 0, 0, .2);
 }
 
 .hobbies-text{
@@ -131,6 +180,17 @@ footer a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -10px;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, .2), -5px -5px 5px rgba(0, 0, 0, .2);
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+    cursor: default;
+}
+.hobbies-text:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: #94936F;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .2);
 }
 
 .about-text{
@@ -140,6 +200,17 @@ footer a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -10px;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, .2), -5px -5px 5px rgba(0, 0, 0, .2);
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+    cursor: default;
+}
+.about-text:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: #94936F;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .2);
 }
 .hannah-image-gallery{
     width: 1200px;
@@ -167,6 +238,7 @@ figcaption{
     margin-left: auto;
     margin-right: auto;
     font-style: italic;
+    
 }
 .container{
     margin: 0;
